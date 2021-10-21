@@ -1,0 +1,37 @@
+### Route for registering User
+POST http://localhost:5000/api/user/register
+Content-Type: application/json
+
+{
+    "name":"Mohammad Abbas",
+    "email":"shaikh.abbas2609@gmail.com",
+    "password":"123456"
+}
+
+###Route for logging user in
+POST http://localhost:5000/api/user/login
+Content-Type: application/json
+
+{
+    "email":"abbas@example.com",
+    "password":"123456"
+}
+
+###Get My profile
+GET http://localhost:5000/api/user/myprofile
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjE1ZmQ4NGUzNTliNTdiNWQyMTJiYjU2IiwiZW1haWwiOiJhYmJhc0BleGFtcGxlLmNvbSIsImlhdCI6MTYzMzkzNjU4OSwiZXhwIjoxNjMzOTQwMTg5fQ.3KyDO6Db-v81N8Z2sI1g4YEIKUz-qzXNHPQTcB9aDvI=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjE1ZmQ4NGUzNTliNTdiNWQyMTJiYjU2IiwiZW1haWwiOiJhYmJhc0BleGFtcGxlLmNvbSIsImlhdCI6MTYzMzkzNjU4OSwiZXhwIjoxNjMzOTQwMTg5fQ.3KyDO6Db-v81N8Z2sI1g4YEIKUz-qzXNHPQTcB9aDvI; Max-Age=3600; Path=/; Expires=Mon, 11 Oct 2021 08:16:29 GMT; HttpOnly
+
+
+###Forgot Password
+POST http://localhost:5000/api/user/forgotpassword
+Content-Type: application/json
+
+{
+    "email":"shaikh.abbas2609@gmail.com"
+}
+
+
+###Reset Token
+PUT http://localhost:5000/api/user/resetpassword/1234
+Content-Type: application/json
